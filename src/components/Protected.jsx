@@ -13,7 +13,7 @@ const Protected = () => {
       }
 
       try {
-        const response = await axios.get('http://localhost:3000/api/data', {
+        const response = await axios.get('https://last-change-2.onrender.com/api/data', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setMessage(response.data.message);

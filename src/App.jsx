@@ -1,24 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Register from './components/Register';
 import Login from './components/Login';
-import Protected from './components/Protected';
+import Signup from './components/Signup';
+import RequestPasswordReset from './components/RequestPasswordReset';
 import ResetPassword from './components/ResetPassword';
-
+import Dashboard from './components/Dashboard';
 
 function App() {
   return (
     <Router>
-      <div className="App">
       <Routes>
-      <Route path="/" element={<Register/>} />
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/protected" element={<Protected/>} />
-          <Route path="/reset-password" element={<ResetPassword/>} />
-     
+        <Route path="/" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/reset-password" element={<RequestPasswordReset />} />
+        <Route path="/reset/:token" element={<ResetPassword />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-          
-      </div>
     </Router>
   );
 }

@@ -1,21 +1,21 @@
-/* loginStyles.css */
+/* signupStyles.css */
 
-.login-container {
+.signup-container {
     max-width: 400px;
     margin: 0 auto;
   }
   
-  .login-form {
+  .signup-form {
     margin-bottom: 20px;
   }
   
-  .login-input {
+  .signup-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
   }
   
-  .login-button {
+  .signup-button {
     width: 100%;
     padding: 10px;
     background-color: #007bff;
@@ -24,7 +24,7 @@
     cursor: pointer;
   }
   
-  .login-button:hover {
+  .signup-button:hover {
     background-color: #0056b3;
   }
   
@@ -32,7 +32,7 @@
     color: red;
   }
   
-  .forgot-password-link {
+  .login-link {
     margin-top: 10px;
     display: block;
   }
